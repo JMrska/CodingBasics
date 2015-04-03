@@ -3,6 +3,7 @@ package mrj.main;
 import mrj.service.ShapeService;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AopMain {
@@ -12,6 +13,7 @@ public class AopMain {
 		ShapeService service = context.getBean("ShapeService",ShapeService.class);
 		service.getCircle().getName();
 		service.getTriangle().getName();
+		((AbstractApplicationContext)context).close();
 		
 	}
 }
