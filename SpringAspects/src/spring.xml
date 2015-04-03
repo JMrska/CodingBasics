@@ -19,4 +19,10 @@
 	  
 	  <bean name ="ShapeService" class="mrj.service.ShapeService" autowire="byName" />
 	  <bean name="loggingAspect" class="mrj.aspect.LoggingAspect" />
+	  <aop:config>
+	  	<aop:aspect id="loggingAspectID" ref="loggingAspect">
+	  		<aop:before method="SecondLoggingAdvice()" pointcut="public * get-()"  />
+	  	
+	  	</aop:aspect> 
+	  </aop:config>
 </beans>
