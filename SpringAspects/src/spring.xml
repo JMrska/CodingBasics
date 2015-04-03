@@ -21,7 +21,8 @@
 	  <bean name="loggingAspect" class="mrj.aspect.LoggingAspect" />
 	  <aop:config>
 	  	<aop:aspect id="loggingAspectID" ref="loggingAspect">
-	  		<aop:before method="SecondLoggingAdvice()" pointcut="public * get-()"  />
+	  		<aop:pointcut expression="* * get*(..)" id="getter"/>
+	  		<aop:before method="SecondLoggingAdvice()" pointcut-ref="getter"  />
 	  	
 	  	</aop:aspect> 
 	  </aop:config>
