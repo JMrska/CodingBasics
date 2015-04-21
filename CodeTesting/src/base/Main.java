@@ -7,6 +7,7 @@ public class Main {
 System.out.println("TADA");
 System.out.println("cg");
 System.out.println("");
+System.out.println("");
 	}
 
 }
