@@ -14,6 +14,7 @@ public class Main {
 		
 		System.out.println("in dev");
 		System.out.println("second in dev");
+		System.out.println("second in server");
 
 
 	}
