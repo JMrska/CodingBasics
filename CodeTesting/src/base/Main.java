@@ -21,6 +21,7 @@ public class Main {
 		System.out.println("fourth in server");
 		System.out.println("fourth in local");
 				System.out.println("fourth in devel");
+				System.out.println("fourth in rc1");
 
 	}
 
