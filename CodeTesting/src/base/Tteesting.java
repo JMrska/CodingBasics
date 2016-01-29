@@ -5,5 +5,6 @@ public class Tteesting {
 	System.out.println("crazy devel") ;	
 	System.out.println("crazy devel2") ;	
   System.out.println("local");
+    System.out.println("localdevel");
 	}
 }
